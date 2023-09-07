@@ -1,8 +1,9 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { MENUS } from "@/utils/enum";
+import Button from "./Button";
 
-const MobileBar = ({ handleClose, open }) => {
+const MobileBar = ({ handleClose, open, handleShowModal }) => {
   return (
     <div
       onClick={handleClose}
@@ -17,7 +18,7 @@ const MobileBar = ({ handleClose, open }) => {
       >
         <FaTimes className="text-cyan-400" size={32} />
       </div>
-      <div className="grid grid-cols-1 grid-rows-6 gap-6 text-center">
+      <div className="flex flex-col  gap-6 text-center mt-10">
         {MENUS.map((menu) => {
           return (
             <a
@@ -30,6 +31,9 @@ const MobileBar = ({ handleClose, open }) => {
             </a>
           );
         })}
+        <div className="mx-auto">
+          <Button onClick={handleShowModal}>LOGIN</Button>
+        </div>
       </div>
     </div>
   );

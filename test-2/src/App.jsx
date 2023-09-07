@@ -13,7 +13,11 @@ function App() {
   return (
     <div className="scroll-smooth">
       <LoginModal open={showModal} setOpen={setShowModal} />
-      <MobileBar open={sidebar} handleClose={() => setSidebar(false)} />
+      <MobileBar
+        handleShowModal={() => setShowModal(true)}
+        open={sidebar}
+        handleClose={() => setSidebar(false)}
+      />
       <Navbar
         handleShowModal={() => setShowModal(true)}
         handleShowMobilebar={() => setSidebar(true)}
