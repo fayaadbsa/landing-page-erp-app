@@ -5,7 +5,7 @@ import { BsGear } from "react-icons/bs";
 import shapeblue from "@/assets/shape-blue.svg";
 import { MENUS } from "../utils/enum";
 
-const Navbar = ({ handleShowModal }) => {
+const Navbar = ({ handleShowModal, handleShowMobilebar }) => {
   return (
     <div className="flex items-center relative justify-between py-6 px-4 sm:px-8">
       <button className="flex items-center gap-4 z-10 text-white ">
@@ -20,7 +20,7 @@ const Navbar = ({ handleShowModal }) => {
         ))}
         <Button onClick={handleShowModal}>LOGIN</Button>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden cursor-pointer" onClick={handleShowMobilebar}>
         <AiOutlineMenu className="text-4xl text-cyan-400" />
       </div>
       <img
