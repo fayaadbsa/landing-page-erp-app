@@ -1,9 +1,20 @@
 import { useState } from "react";
+import Navbar from "./components/Navbar";
+import ContactSection from "./sections/ContactSection";
+import PricingSection from "./sections/PricingSection";
+import AboutSection from "./sections/AboutSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div>ERP</div>;
+  return (
+    <div>
+      <Navbar />
+      <div className="mx-auto py-4">
+        <AboutSection />
+        <PricingSection />
+        <ContactSection />
+      </div>
+    </div>
+  );
 }
 
 export default App;
