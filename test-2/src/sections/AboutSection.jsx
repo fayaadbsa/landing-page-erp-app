@@ -13,7 +13,7 @@ const AboutSection = () => {
             business operations.
           </h5>
         </div>
-        <div className="flex flex-col items-center mr-auto">
+        <div className="flex flex-col items-center sm:mr-auto">
           <p className="mt-48 italic text-2xl font-medium">
             "ERP: Boosting efficiency through integrated operations"
           </p>

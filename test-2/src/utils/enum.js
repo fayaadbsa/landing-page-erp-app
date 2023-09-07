@@ -1,7 +1,7 @@
 export const MENUS = [
-  { label: "ABOUT" },
-  { label: "PRICING" },
-  { label: "CONTACT" },
+  { label: "ABOUT", to: "#about" },
+  { label: "PRICING", to: "#pricing" },
+  { label: "CONTACT", to: "#contact" },
 ];
 
 export const PLANS = [
@@ -10,9 +10,9 @@ export const PLANS = [
     label: "BASIC",
     price: "FREE",
     features: [
-      "Mencatat barang masuk",
-      "Mencatat barang keluar",
-      "Mencatat hasil keuntungan",
+      "Recording incoming goods",
+      "Recording outgoing goods",
+      "Recording profit outcomes",
     ],
   },
   {
@@ -20,10 +20,10 @@ export const PLANS = [
     label: "BUSINESS",
     price: "$20",
     features: [
-      "Mencatat barang masuk dan keluar",
-      "Mencatat Keuntungan",
-      "Dapat menganalisa hasil penjualan dengan CHART",
-      "Support 7x24 Jam",
+      "Recording incoming and outgoing goods",
+      "Recording profits",
+      "Analyzing sales results with CHART",
+      "24/7 support",
     ],
   },
   {
@@ -31,12 +31,12 @@ export const PLANS = [
     label: "ENTREPRENEUR",
     price: "$35",
     features: [
-      "Mencatat barang masuk dan keluar",
-      "Mencatat Keuntungan",
-      "Dapat menganalisa hasil penjualan dengan CHART",
-      "Support 7x24 Jam",
-      "Export data ke Excel",
-      "AI Prediksi penghasilan",
+      "Recording incoming and outgoing goods",
+      "Recording profits",
+      "Analyzing sales results with CHART",
+      "24/7 support",
+      "Exporting data to Excel",
+      "AI revenue prediction",
     ],
   },
 ];

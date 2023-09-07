@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   return (
     <button
       className={clsx(
@@ -10,6 +10,7 @@ const Button = ({ children }) => {
         "font-bold text-cyan-400 bg-white",
         "hover:bg-cyan-400 hover:text-white transition-all"
       )}
+      onClick={onClick}
     >
       {children}
     </button>

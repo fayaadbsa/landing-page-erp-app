@@ -1,8 +1,24 @@
-# React + Vite
+## ⚙ ERP Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Technology Used
 
-Currently, two official plugins are available:
+- ReactJS: Required for this application
+- TailwindCSS: Used for CSS styling that has rich built-in library
+- React Icons: Used for displaying customizable icons
+- Vite: Build tool that aims to provide faster development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### How to Run
+
+1. Install App
+
+```
+npm install
+```
+
+2. Run as Development
+
+```
+npm run dev
+```
+
+3. Open `http://localhost:3000` in your favorite browser 🥳!
